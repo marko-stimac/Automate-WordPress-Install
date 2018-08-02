@@ -1,0 +1,36 @@
+{
+     "name": "marko-stimac/wpstarter",
+     "description": "Wordpress plugins initialization",
+     "repositories": [{
+               "type": "composer",
+               "url": "https://wpackagist.org"
+          },
+          {
+               "type": "package",
+               "package": {
+                    "name": "advanced-custom-fields/advanced-custom-fields-pro",
+                    "version": "5.3.9.2",
+                    "type": "wordpress-plugin",
+                    "dist": {
+                         "type": "zip",
+                         "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX=="
+                    }
+               }
+          }
+     ],
+     "require": {
+          "wpackagist-plugin/better-search-replace": "*",
+          "wpackagist-plugin/contact-form-7": "*",
+          "wpackagist-plugin/cookie-notice": "*",
+          "wpackagist-plugin/show-current-template": "*",
+          "wpackagist-plugin/redirection": "*",
+          "wpackagist-plugin/updraftplus": "*",
+          "wpackagist-plugin/wordfence": "*",
+          "wpackagist-plugin/wordpress-seo": "*"
+     },
+     "autoload": {
+          "psr-0": {
+               "Acme": "src/"
+          }
+     }
+}
